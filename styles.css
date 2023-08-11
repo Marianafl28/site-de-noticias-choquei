@@ -1,0 +1,167 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.article {
+  background-color: #ececec;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 6px rgba(209, 203, 203, 0.1);
+  transition: transform 0.2s;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+}
+
+.article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 16px;
+  color: #450647;
+  margin-bottom: 15px;
+}
+
+.article a {
+  color: #77736e;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.article a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+.header {
+  background-color: #828e9b;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #758291;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .article {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}
+
+.comments {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.comment-list {
+  margin-top: 10px;
+}
+
+.comment {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.986);
+}
+
+.comment-form {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.comment-input::placeholder {
+  color: #999;
+}
+
+button[type="submit"] {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+}
+
+
+.existing-comments {
+  margin-top: 20px;
+}
+
+.existing-comment {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+
+}
